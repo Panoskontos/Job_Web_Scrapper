@@ -36,3 +36,6 @@ mydict = {"Jobs": my_jobs,
 
 #Coverting it into a dataframe with all our data
 df = pd.DataFrame(mydict)
+
+#extracting our data to a csv file
+df.to_csv("jobs.csv", index=False)
